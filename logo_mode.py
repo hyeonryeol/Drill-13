@@ -1,7 +1,7 @@
 import game_framework
 from pico2d import *
 
-import play_mode
+import title_mode
 
 image = None
 logo_start_time = 0.0
@@ -21,7 +21,7 @@ def finish():
 
 def update():
     if get_time() - logo_start_time >= 2.0:
-        game_framework.change_mode(play_mode)
+        game_framework.change_mode(title_mode)
 
 
 def render():
