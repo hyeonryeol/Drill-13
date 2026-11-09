@@ -41,3 +41,5 @@ def handle_events():
             play_mode.boy.item = 'BALL'
         elif event.type == SDL_KEYDOWN and event.key == SDLK_2:
             play_mode.boy.item = 'BIG_BALL'
+        else:
+            play_mode.boy.handle_event(event)
