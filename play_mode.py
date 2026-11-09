@@ -39,4 +39,4 @@ def render():
 
 
 def finish():
-    pass
+    game_world.clear()
